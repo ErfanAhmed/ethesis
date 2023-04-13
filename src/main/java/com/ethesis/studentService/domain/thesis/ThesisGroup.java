@@ -3,6 +3,7 @@ package com.ethesis.studentService.domain.thesis;
 import com.ethesis.studentService.domain.teacher.Faculty;
 import com.ethesis.studentService.domain.Persistent;
 import com.ethesis.studentService.domain.Student;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -48,8 +49,8 @@ public class ThesisGroup extends Persistent {
     @JoinColumn(name = "faculty_id")
     private Faculty faculty;
 
-    @OneToMany(mappedBy = "thesisGroup")
-    private List<Student> students;
+//    @OneToMany(mappedBy = "thesisGroup")
+//    private List<Student> students;
 
     /**
      * thesis paper content as lob

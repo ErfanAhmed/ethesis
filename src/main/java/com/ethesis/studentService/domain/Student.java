@@ -1,6 +1,7 @@
 package com.ethesis.studentService.domain;
 
 import com.ethesis.studentService.domain.thesis.ThesisGroup;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.*;

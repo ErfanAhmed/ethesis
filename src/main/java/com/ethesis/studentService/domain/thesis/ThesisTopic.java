@@ -3,6 +3,7 @@ package com.ethesis.studentService.domain.thesis;
 import com.ethesis.studentService.domain.Department;
 import com.ethesis.studentService.domain.Persistent;
 import com.ethesis.studentService.domain.University;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.*;
